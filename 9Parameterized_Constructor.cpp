@@ -6,7 +6,7 @@ class Complex
     int a, b;
 
 public:
-    Complex(int, int); // Constructor declaration
+    Complex(int, int); // REVIEW Constructor declaration
 
     void printNumber()
     {
@@ -14,7 +14,7 @@ public:
     }
 };
 
-Complex ::Complex(int x, int y) // ----> This is a parameterized constructor as it takes 2 parameters
+Complex ::Complex(int x, int y) //REVIEW ----> This is a parameterized constructor as it takes 2 parameters
 {
     a = x;
     b = y;
@@ -23,11 +23,11 @@ Complex ::Complex(int x, int y) // ----> This is a parameterized constructor as 
 int main()
 {
     // Implicit call
-    Complex a(4, 6);
+    Complex a(4, 6); //REVIEW - 
     a.printNumber();
 
     // Explicit call
-    Complex b = Complex(5, 7);
+    Complex b = Complex(5, 7); //REVIEW - 
     b.printNumber();
 
     return 0;

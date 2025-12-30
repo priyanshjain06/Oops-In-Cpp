@@ -6,7 +6,7 @@ class Complex
     int a, b;
 
 public:
-    Complex(void); // Constructor declaration
+    Complex(void); // REVIEW Constructor declaration
 
     void printNumber()
     {
@@ -14,7 +14,7 @@ public:
     }
 };
 
-Complex ::Complex(void) // ----> This is a default constructor as it takes no parameters
+Complex ::Complex(void) // REVIEW ----> This is a default constructor as it takes no parameters
 {
     a = 10;
     b = 0;
@@ -30,14 +30,14 @@ int main()
     return 0;
 }
 
+// REVIEW -
+//  A constructor should be declared in the public section of the class
+//  They are automatically invoked whenever the object is created
+//  They cannot return values and do not have return types
+//  It can have default arguments and can be overloaded
+//  We cannot refer to their address
 
-// A constructor should be declared in the public section of the class
-// They are automatically invoked whenever the object is created
-// They cannot return values and do not have return types
-// It can have default arguments and can be overloaded
-// We cannot refer to their address
-
-    // Creating a Constructor
-    // Constructor is a special member function with the same name as of the class.
-    // It is used to initialize the objects of its class
-    // It is automatically invoked whenever an object is created
+// Creating a Constructor
+// Constructor is a special member function with the same name as of the class.
+// It is used to initialize the objects of its class
+// It is automatically invoked whenever an object is created
