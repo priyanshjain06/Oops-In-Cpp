@@ -1,13 +1,12 @@
 // When a function is declared as const, it can be called on any type of object. Non-const functions can only be called by non-const objects.
 
-// Constant Functions can also access the private members just like normal functions.
 
 // Syntax to define Constant variables:-
 // Const classname objectname;
  
 
 // C++ program to demonstrate that data cannot be updated
-// in a Constant member function
+// in a Constant member function but it can be accessed ! 
 
 #include <iostream>
 using namespace std;
