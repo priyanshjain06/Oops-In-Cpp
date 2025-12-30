@@ -28,22 +28,23 @@ int main()
 
 	// Early binding because fun1() is non-virtual
 	// in base
-	p->fun_1();
+	
+	p->fun_1(); //REVIEW -  overloading  , runs base class function  , as there is  no virtual function 
 
 	// Late binding (RTP)
-	p->fun_2();
+	p->fun_2(); //REVIEW -  over-riding 
 
 	// Late binding (RTP)
 	p->fun_3();
 
 	// Late binding (RTP)
-	p->fun_4();
+	p->fun_4(); //REVIEW not over-riding , signature not same 
 
 	// Early binding but this function call is
 	// illegal (produces error) because pointer
 	// is of base type and function is of
 	// derived class
-	// p->fun_4(5);
+	// p->fun_4(5); //REVIEW -  
 
 	return 0;
 }
