@@ -3,7 +3,7 @@ using namespace std;
 
 class Base
 {
-    int data1; // private by default and is not inheritable
+    int data1; //REVIEW  private by default and is not inheritable
 
 public:
     int data2;
