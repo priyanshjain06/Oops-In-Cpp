@@ -13,9 +13,9 @@ public:
         b = v2;
     }
 
-    void setDataBySum(complex o1, complex o2)
+    void setDataBySum(complex o1, complex o2) //REVIEW - 
     {
-        a = o1.a + o2.a;
+        a = o1.a + o2.a; //REVIEW - 
         b = o1.b + o2.b;
     }
 
