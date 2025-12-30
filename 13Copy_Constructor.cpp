@@ -16,7 +16,7 @@ public:
         a = num;
     }
     
-    // When no copy constructor is found, compiler supplies its own copy constructor
+    //REVIEW  When no copy constructor is found, compiler supplies its own copy constructor
     Number(Number const &obj)
     {
         cout << "Copy constructor called!!!" << endl;
@@ -33,9 +33,10 @@ int main()
 {
     Number x, z(45);
     x.display();
-    y.display();
+    // y.display();
     z.display();
 
+    //REVIEW - 
     Number z1(z); // Copy constructor invoked even if there in no defination for copy constructor in the class
     z1.display();
 
