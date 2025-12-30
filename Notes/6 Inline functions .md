@@ -7,7 +7,6 @@ The compiler may not perform inlining in such circumstances as:
 * If a function contains a **loop** (`for`, `while`, `do-while`)
 * If a function contains **static variables**
 * If a function is **recursive**
-* If a function return type is **other than void**, and the **return statement doesn't exist** in function body
 * If a function contains a **switch** or **goto** statement
 
 ---

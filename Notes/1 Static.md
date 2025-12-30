@@ -87,16 +87,7 @@ static int x = 10;
 ### Meaning
 
 * Variable is visible only inside that file
-* Not accessible from other files using `extern`
-
-### Why used?
-
-✔ Avoid name conflicts  
-✔ Data hiding at file level
-
-### Exam term
-
-**Internal linkage**
+* Not accessible from other files using `extern`l
 
 ---
 
@@ -133,16 +124,9 @@ int main() {
 * Exists even if no object exists
 * Memory allocated once
 
-### Access
-
-```cpp
-Student::count   // preferred
-```
-
 ### Exam keywords
 
 * Belongs to class, not object
-* Single copy
 * Static memory allocation
 
 ---
@@ -160,9 +144,7 @@ int A::x = 10;      // definition
 ### Reason
 
 * Compiler needs single memory location
-* Avoid multiple definitions
 
-⚠️ **VERY COMMON EXAM QUESTION**
 
 ---
 

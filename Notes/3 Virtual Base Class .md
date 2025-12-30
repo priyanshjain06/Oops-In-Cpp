@@ -120,20 +120,6 @@ obj.A::x   // ambiguous - which A?
 obj.x      // unambiguous - single A
 ```
 
----
-
-## 6️⃣ Uses extra pointer (slight overhead)
-
-* Compiler maintains a **virtual base pointer**
-* Slight memory & access-time overhead
-* Trade-off for correctness
-
----
-
-## 7️⃣ Supports polymorphism indirectly
-
-* Enables safe upcasting
-* Avoids duplicate base subobjects
 
 ---
 
