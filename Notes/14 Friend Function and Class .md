@@ -31,6 +31,12 @@ public:
 void show(A obj) {         // definition
     cout << obj.x;
 }
+
+//REVIEW -  calling 
+int main() {
+    A obj(10);
+    show(obj);   // ✅ calling friend function
+}
 ```
 
 ### 🔹 Key properties (EXAM POINTS)
@@ -56,14 +62,17 @@ When a class is declared as friend, all its member functions can access private 
 
 ### 🔹 Syntax
 ```cpp
-class B;   // forward declaration
+#include <iostream>
+using namespace std;
+
+class B;   // REVIEW forward declaration
 
 class A {
 private:
     int x;
 public:
     A(int a) { x = a; }
-    friend class B;   // friend class
+    friend class B;   // B is friend
 };
 
 class B {
@@ -72,6 +81,16 @@ public:
         cout << obj.x;
     }
 };
+
+//REVIEW - 
+int main() {
+    A objA(20);
+    B objB;
+    objB.show(objA);   // ✅ calling friend class function
+}
+
+
+
 ```
 
 ---
@@ -83,9 +102,10 @@ public:
 
 ---
 
-## 📊 Comparison Table
 
-| Feature       | Friend Function        | Friend Class           |
-|---------------|------------------------|------------------------|
-| Access        | Specific function      | All functions          |
-| Declaration   | `friend void fun()`    | `friend class A`       |
+| Feature       | Friend Function        | Friend Class              |
+|---------------|------------------------|---------------------------|
+| Nature        | Function               | Class                     |
+| Access scope  | Specific function      | All member functions      |
+| Declaration   | `friend void fun()`    | `friend class A`          |
+calling
