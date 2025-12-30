@@ -25,13 +25,14 @@
 //     return 0;
 // }
 
-// 2) To return reference to the calling object
+// REVIEW 2) To return reference to the calling object
 
 class A
 {
     int a;
+
 public:
-    A    &setData(int a)
+    A& setData(int a) // REVIEW -
     {
         this->a = a;
         return *this;
@@ -45,8 +46,7 @@ public:
 
 int main()
 {
-    A a; 
-
+    A a;
 
     a.setData(4).getData();
     return 0;
