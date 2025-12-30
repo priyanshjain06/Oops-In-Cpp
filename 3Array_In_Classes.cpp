@@ -74,7 +74,7 @@ int main()
     // Employee harry, rohan, lovish, shruti;
     // harry.setId();
     // harry.getId();
-    Employee fb[4];
+    Employee fb[4]; //REVIEW - 
     for (int i = 0; i < 4; i++)
     {
         fb[i].setId();
