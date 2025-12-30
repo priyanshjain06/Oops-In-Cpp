@@ -1,23 +1,25 @@
 #include <iostream>
 using namespace std;
 
-int count = 0;
-
 class test
 {
+    static int count; // REVIEW if count is not static it will print 1 1 1 1 coz static deosnt belong to object but to class 
+
 public:
     test()
     {
         count++;
-        cout << "No of objects created are: " << count << endl;
+        cout << "Objects alive: " << count << endl;
     }
 
     ~test()
     {
-        cout << "No of objects destroyed are: " << count << endl;
         count--;
+        cout << "Objects alive: " << count << endl;
     }
 };
+
+int test::count = 0;
 
 int main()
 {
@@ -25,18 +27,10 @@ int main()
 
     {
         test t5;
-    }
-    
-    {
-        test t6;
-    }
+    } //REVIEW t5 destroyed HERE because destrcutor runs before the constructor  , if there is no destructor then it will not end 
 
     return 0;
 }
-
-
-
-
 
 // #include <iostream>
 // using namespace std;
