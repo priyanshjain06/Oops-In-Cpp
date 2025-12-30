@@ -22,3 +22,43 @@ Binding data (variables) and methods (functions) into a single unit (class) and 
 ### Meaning
 
 One class acquires properties and behavior of another class.
+
+
+# Abstraction
+
+## 📖 What it means
+
+Showing only essential features and hiding implementation details.
+
+---
+
+## 🔧 How it is achieved
+
+* **Abstract class**
+* **Pure virtual functions**
+
+---
+
+---
+
+# Polymorphism
+
+## 📖 What it means
+
+**One name, many forms** — same function behaves differently.
+
+---
+
+## 🎯 Types
+
+### 🔹 Compile-time polymorphism
+
+* Function overloading
+* Operator overloading
+
+### 🔹 Runtime polymorphism
+
+* Function overriding
+* Virtual functions
+
+---
