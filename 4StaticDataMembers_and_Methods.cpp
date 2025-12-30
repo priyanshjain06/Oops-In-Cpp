@@ -18,37 +18,31 @@ public:
         cout << "The id of this employee is " << id << " and this is employee number " << count << endl;
     }
 
-    static          void              getCount(void)
+    static void getCount(void)
     {
-        // cout<<id; // throws an error
-
-
-
-
+        // cout<<id; //REVIEW throws an error
 
         cout << "The value of count is " << count << endl;
     }
 };
-
 
 // void Employee::getCount(void)
 // {
 //     cout<<"Value of count is :"<<count<<endl;
 // }
 
-
-// Count is the static data member of class Employee
+// REVIEW Count is the static data member of class Employee
 int Employee::count; // Default value is 0
 
 int main()
 {
     Employee harry;
     // harry.id = 1;
-    // harry.count=1; // cannot do this as id and count are private
+    // harry.count=1; //REVIEW cannot do this as id and count are private
 
     harry.setData();
     harry.getData();
-    Employee::getCount();
+    Employee::getCount(); // REVIEW - to access static
 
     return 0;
 }
